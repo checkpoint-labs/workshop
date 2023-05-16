@@ -1,0 +1,19 @@
+scalar Text
+
+type AccountNft {
+  id: String! # Equal to <nftAddress>-<accountAddress>
+  account: String
+  collection: NftCollection
+  tokenId: String
+  balance: Int
+  name: String
+  modified: Int # Last modified timestamp in seconds
+  tx: String # Last transaction that modified this entry
+}
+
+type NftCollection {
+  id: String! # NFT contract address
+  name: String
+  symbol: String
+  totalSupply: Int
+}

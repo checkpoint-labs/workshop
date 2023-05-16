@@ -1,0 +1,39 @@
+{
+  "network_node_url": "",
+  "optimistic_indexing": true,
+  "sources": [
+    {
+      "contract": "0x04d0390b777b424e43839cd1e744799f3de6c176c7e32c1812a41dbd9c19db6a",
+      "start": 51000,
+      "deploy_fn": "handleDeploy",
+      "events": [
+        {
+          "name": "Sync",
+          "fn": "handleSync"
+        }
+      ]
+    },
+    {
+      "contract": "0x030615bec9c1506bfac97d9dbd3c546307987d467a7f95d5533c2e861eb81f3f",
+      "start": 51000,
+      "deploy_fn": "handleDeploy",
+      "events": [
+        {
+          "name": "Sync",
+          "fn": "handleSync"
+        }
+      ]
+    },
+    {
+      "contract": "0x000023c72abdf49dffc85ae3ede714f2168ad384cc67d08524732acea90df325",
+      "start": 50000,
+      "deploy_fn": "handleDeploy",
+      "events": [
+        {
+          "name": "Sync",
+          "fn": "handleSync"
+        }
+      ]
+    }
+  ]
+}

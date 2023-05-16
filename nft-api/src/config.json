@@ -1,0 +1,10 @@
+{
+  "network_node_url": "http://0.0.0.0:3030",
+  "start": 0,
+  "global_events": [
+    {
+      "name": "Transfer",
+      "fn": "handleTransfer"
+    }
+  ]
+}

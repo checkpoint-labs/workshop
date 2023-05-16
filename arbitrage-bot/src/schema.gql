@@ -1,0 +1,35 @@
+type SithswapPair {
+  id: String! # Pair id
+  reserve0: Float! # Reserve of token 0
+  reserve1: Float! # Reserve of token 1
+  price: Float! # Updated price
+  timestamp: Int! # Last timestamp where this entry was modified
+  synced: Int! # Last block where this entry was modified
+  tx: String # Last transaction that modified this entry
+}
+
+type JediswapPair {
+  id: String! # Pair id
+  reserve0: Float! # Reserve of token 0
+  reserve1: Float! # Reserve of token 1
+  price: Float! # Updated price
+  timestamp: Int! # Last timestamp where this entry was modified
+  synced: Int! # Last block where this entry was modified
+  tx: String # Last transaction that modified this entry
+}
+
+type TenkPair {
+  id: String! # Pair id
+  reserve0: Float! # Reserve of token 0
+  reserve1: Float! # Reserve of token 1
+  price: Float! # Updated price
+  timestamp: Int! # Last timestamp where this entry was modified
+  synced: Int! # Last block where this entry was modified
+  tx: String # Last transaction that modified this entry
+}
+
+type Metric {
+  id: ID!
+  opportunities: Int! # Number of opportunities caught
+  rewards: Float! # Possible cumulated reward amount
+}
